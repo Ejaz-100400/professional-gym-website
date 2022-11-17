@@ -320,7 +320,10 @@ ul li{
   top:50%;
   width:70%;
 }
-
+.card--context--desc{
+  position:absolute;
+  bottom:100px;
+}
 
 
 .exercise--categ{
@@ -501,9 +504,7 @@ ul li{
   bottom:15%;
   
 }
-.card-img{
-  border-radius: 20px;
-}
+
 @media(max-width:976px){
   .products--slide-card--item{
     width:70%;
