@@ -3,6 +3,15 @@
   padding:0;
   font-family: 'Segoe UI';
 }
+/* h1{
+  word-spacing:5px;
+} */
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
 /* #root{
 
   } */
@@ -281,7 +290,10 @@ ul li{
 .card:hover .card-img ,.card:hover .card--context{
   transform: scale(1.02);
 }
-
+.products--slide-card--item>.card-img{
+  border-radius: 20px;
+  border:5px solid white;
+}
 .card--context{
   padding:20px 20px;
   position:absolute;
@@ -464,6 +476,7 @@ ul li{
   transition:all 0.2s ease-in;
   border-radius:25px;
   padding:10px;
+  position: relative;
 }
 .products--categ p{
   padding-top:20px;
@@ -486,6 +499,7 @@ ul li{
 .products--categ--context,.products--categ--slider{
   width:45%;
   padding:20px;
+  z-index:1;
 }
 
 .product--btn{
@@ -529,3 +543,75 @@ ul li{
 .swiper-pagination-bullet{
   background:#abf213;
 } 
+
+
+
+.products-desc-bar {
+  z-index:2;
+  border-radius: 20px;
+  background-color: #4c7474b5;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.prod-desc-disp{
+  transition:all 0.5s ease-in-out;
+}
+@media(max-width:567px){
+  .products-desc-barr{
+    width:100%;
+  }
+  .prod-desc-disp{
+    top:50%;
+  }
+  .products--desc--panel{
+    height:400px;
+  }
+}
+.fa-xmark{
+  top:10px;
+  right:10px;
+  z-index:4;
+  cursor: pointer;
+}
+.products--desc--panel{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height:350px;
+}
+
+.products--desc--main{
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+@media(max-width:567px){
+  .products--desc--main{
+    justify-content: space-around;
+  }
+}
+.products--desc--main--context{
+  place-items: left;
+  align-items: center;
+}
+.products--desc--main--context--pc{
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+
+.products--desc--main--context--pc span{
+  font-size:35px;
+  font-weight: 800;
+  border-radius:20px;
+}
+
+.product--slider--header {
+  justify-content:space-around;
+}
+
+.product--slider--header li{
+  font-size:25px;
+}
+.product--main--sliders--context>div>span{
+font-size:20px;
+}

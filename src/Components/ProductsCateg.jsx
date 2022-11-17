@@ -1,22 +1,27 @@
-import Carddetails from "./Carddetails"
+
+import ProductsDesc from "./ProductDesc"
 import ProductsSlideCard from "./ProductsSlideCard"
+import ProductsDescBar from "./ProductsDescBar"
 import {Swiper,SwiperSlide} from 'swiper/react'
 import{Navigation,EffectCoverflow,Pagination} from 'swiper'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 import 'swiper/css'
 export default function ProductsCateg(){
-    const productscarddata=Carddetails.map((products)=>{
+    const productscarddata=ProductsDesc.map((products)=>{
         return(
+        <div className="product">
             <SwiperSlide>
             <ProductsSlideCard
             key={products.id}
             {...products}/>
             </SwiperSlide>
+        </div>
         )
     })
     return(
     <div className="products--categ d-flex">
+        <ProductsDescBar/>
         <div className="products--categ--context mt-5">
         <h1 className='category--context text-left text-light'>Reach your goals with our products</h1>
         <p className="w-100 pt-5 text-light">Satisfied more than thousand professional athletes and body-builders and 
@@ -28,6 +33,7 @@ export default function ProductsCateg(){
             </div>
         </div>
         <div className='products--categ--slider p-5 d-flex '>
+        <h1 className="text-light text-center position-absolute">DOUBLE CLICK</h1>
         <Swiper 
                 modules={[Pagination,EffectCoverflow,Navigation]}
                 style={{
