@@ -1,0 +1,530 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Segoe UI';
+}
+/* #root{
+
+  } */
+.black-bg-1{
+  /* background:linear-gradient(to top right,#2e2e2e,rgba(255, 166, 0, 0.772),black); */
+  background-color: #f9e104;
+  transition:all .2s linear;
+}
+.black-bg-2{
+  /* background:linear-gradient(to top right,#000000,rgb(8, 8, 8),rgb(0, 0, 0)); */
+  background-color: #13130f; 
+  transition:all .2s linear;
+}
+.black-bg-3{
+  background-color: #abf213; 
+  transition:all .2s linear;
+}
+/* .black-bg{
+  position:absolute;
+  background-color: #2F2D2D;
+  padding:300px 250px;
+  height:100%;
+  right:0;
+  animation:revealimg .2s linear;
+} */
+/* @media(max-width:576px){
+  .black-bg{
+    padding:580px 15px;
+    position:absolute;
+  }
+} */
+.Header{
+  position: fixed;
+  width:100%;
+  z-index:10;
+  height:15%;
+  transition: all 0.3s ease-in-out;
+}
+@media(max-width:967px){
+  ul li{
+    display:none;
+  }
+}
+.navbar--main{
+  justify-content: space-between;
+  padding:20px;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.mavbar--main{
+  justify-content: center;
+}
+.nav--menu{
+  position:relative;
+  gap:50px;
+  font-size:20px;
+  right:60px;
+}
+.Header .btn{
+  background-color: #FF8B0C;
+  font-weight: 900;
+  position:relative;
+  clip-path: polygon(100% 75%, 90% 98%, 0% 100%, 0% 1%, 99% 1%, 100% 0%);
+}
+ul li{
+  font-weight: 600;
+  color:rgb(255, 255, 255);
+}
+.btn:hover{
+  background-color: #FF8B0C;
+}
+.main{
+  justify-content: space-around;
+  padding:200px;
+
+}
+@media(max-width:967px){
+  .main{
+    flex-wrap: wrap;
+  }
+}
+.main--toggle>span,.main--toggle span>span{
+  border-radius: 20px;
+  color:white;
+  font-weight: bold;
+}
+.main--toggle>span{
+  background: #2F2D2D;
+ 
+}
+.main--toggle span>span{
+  background-color: #FF8B0C;
+  margin-right:10px;
+}
+.main--context,.main--btns{
+  padding-top:30px;
+  animation:revealcircle .2s linear;
+}
+.main--context>span{
+  font-size:60px;
+  font-weight: bolder;
+}
+@media(max-width:576px){
+}
+.main--context p{
+  padding-top:20px;
+  font-size:25px;
+}
+
+.text-stroke{
+  -webkit-text-stroke-width: 2px;   
+  -webkit-text-stroke-color: white;
+  color:transparent;
+  margin-right:10px;
+}
+
+.main--btns{
+  justify-content: space-around;
+  align-items: center;
+  z-index:10;
+
+}
+.main--btns>button{
+  clip-path: polygon(100% 75%, 90% 98%, 0% 100%, 0% 1%, 99% 1%, 100% 0%);
+  border:none;
+  border-radius:10px;
+  font-weight: bold;
+}
+
+.main--btns>button:first-child{
+  background-color:#FF8B0C;
+  color:white;
+}
+
+.main--btns>button:nth-child(2){
+  background-color:#ffffff;
+  color:rgb(0, 0, 0);
+}
+.main--imgcontent img{
+  position: relative;
+  animation:revealimg 1s ease-in-out;
+  z-index:2;
+}
+@media(max-width:576px){
+  .main--imgcontent{
+    margin-top:50px;
+  }
+  .main--imgcontent img{
+    width:400px;
+  }
+ 
+}
+@keyframes revealimg {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1
+  }
+}
+.circle--1{
+  position:absolute;
+  top:25%;
+  right:9%;
+  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
+  padding:200px 200px;
+  border-radius:50%;
+  border:20px solid rgb(190, 64, 64);
+  z-index:1;
+}
+
+.circle--2{
+  position:absolute;
+  top:13%;
+  right:8%;
+  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
+  padding:280px 280px;
+  border-radius:50%;
+  border:20px solid rgb(196, 33, 33);
+  z-index:1;
+}
+.circle--3{
+  position:absolute;
+  top:30%;
+  right:8%;
+  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
+  padding:150px 150px;
+  border-radius:50%;
+  border:20px solid rgb(196, 33, 33);
+  z-index:-1;
+}
+@media(max-width:976px){
+  .circle--1,.circle--2{
+    /* display: none; */
+  }
+  .circle--1{
+    padding:130px 130px;
+    clip-path:none;
+    top:680px;
+    right:200px;
+  }
+  .circle--2{
+    padding:230px 230px;
+    top:590px;
+    right:100px;
+    clip-path: polygon(93% 0, 94% 100%, 0% 100%, 0% 0%);
+  }
+  .circle--3{
+    display: none;
+  }
+}
+.circle--1,.circle--2{
+  animation:revealcircle .2s linear;
+  transition: all 0.1s ease-in;
+}
+
+@media(max-width:576px){
+  .circle--1,.circle--2{
+    /* display: none; */
+  }
+  .circle--1{
+    padding:100px 100px;
+    clip-path:none;
+    top:650px;
+    right:50px;
+  }
+  .circle--2{
+    padding:160px 160px;
+    top:600px;
+    right:0px;
+    clip-path: polygon(93% 0, 94% 100%, 0% 100%, 0% 0%);
+  }
+  .circle--3{
+    display: none;
+  }
+}
+.circle--1,.circle--2{
+  animation:revealcircle .2s linear;
+  transition: all 0.1s ease-in;
+}
+
+@keyframes revealcircle {
+  from{
+    transform:translateX(20%)
+  }
+}
+.gym--category>h1{
+  font-size:45px;
+} 
+.gym--category>p{
+  font-size:25px;
+}
+
+.card--items{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.card--items>img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:rgb(255, 255, 255);
+  padding:250px;
+
+}
+.card{
+  border:none;
+}
+.card,.card>img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition:all 0.2s ease-in;
+}
+.card:hover .card-img ,.card:hover .card--context{
+  transform: scale(1.02);
+}
+
+.card--context{
+  padding:20px 20px;
+  position:absolute;
+  clip-path: polygon(0 0, 100% 100%, 0% 100%);
+  bottom:0px;
+  width:100%;
+  background-color: #ffffff3b;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in;
+}
+.card--context:hover{
+  background-color: transparent;
+  backdrop-filter: none;
+}
+.card--context>button,.slide--desc>button,.products--categ-btn>button{
+  border:2px solid #DEFF56;
+  font-weight: 800;
+}
+.card--context>button{
+  margin-top:80%;
+}
+
+.card--context>button:hover,
+.slide--desc>button:hover,
+.products--categ-btn>button:hover{
+  background-color: #DEFF56;
+  color:black;
+}
+.card:before{
+  font-size: 33px;
+  padding:20px;
+  font-weight: 500;
+  color: #ffffff;
+  position:absolute;
+  z-index: 10;
+  top:50%;
+  width:70%;
+}
+
+
+
+.exercise--categ{
+  place-items: center;
+  padding:35px;
+}
+.slide--card{
+  animation:slide 10s linear;
+  transition: all .5s ease-in;
+  cursor: pointer;
+
+}
+@keyframes slide{
+  0%{
+  }
+  
+}
+.category--context {
+  font-size:50px;
+}
+.slide--card{
+  border-radius:20px;
+  border-bottom-left-radius: 20px;
+  width:70%;
+  padding-top:100px;
+}
+.slide--card:nth-child(2n+1){
+  background: url("./assets/Mike-OHearn-Dumbbell-Flye.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition:all .1s ease-in;
+}
+.slide--card:hover{
+  filter:grayscale(0%);
+  transform:scale(1.04)
+}
+.slide--img{
+  width:100%;
+}
+.slide--img>img{
+  width:100%;
+}
+@media(max-width:567px){
+  .slide--card--category{
+    position:relative;
+    right:30%;
+    width:150%;
+  } 
+  .slide--card{
+    width:100%;
+    border-radius: 20px;
+  } 
+
+}
+.slide--text span{
+  padding:10px 20px;
+  font-size:20px;
+  cursor:pointer;
+  transition:all 0.5s ease-in;
+}
+@media(max-width:976px){
+  .slide--text span{
+    display: none;
+  }
+
+}
+.green-box{
+  text-decoration: underline #DEFF56;
+  text-underline-position: under;
+  border:5px solid #DEFF56;
+  transition:.1s all ease-in;
+}
+
+.slide--line{
+  width:40%;
+  }
+@media(max-width:576px){
+  .slide--line{
+    width:100%;
+    }
+    .swiper-slide{
+      padding:0px 20px;
+    }
+}
+.swiper-slide{
+  padding:100px 20px;
+}
+.slide--card--desc>h5{
+  font-weight:500;
+}
+.fa-bookmark{
+  position: absolute;
+  color: #DEFF56;
+  top:96px;
+  left:20px;
+  font-size:80px;
+}
+.bookmark--desc{
+  position: absolute;
+  color: #000000;
+  top:96px;
+  left:20px;
+  font-size:20px;
+  padding:7px;
+  font-weight: 500;
+}
+.slide--desc{
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.292);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.slide--card--desc{
+  gap:200px;
+  width:43%;
+  padding:10px 20px;
+
+}
+.slide--nos{
+  justify-content: center;
+  gap:10px;
+}
+.slide--nos>span{
+  padding:15px;
+  border:2px solid greenyellow;
+  cursor:pointer;
+  transition: all 0.3s linear;
+}
+.slide--nos>span:hover{
+  background-color: #DEFF56;
+  color:black;
+}
+
+.products--categ{
+  flex-wrap: wrap;
+  gap: 5px;
+  transition:all 0.2s ease-in;
+  border-radius:25px;
+  padding:10px;
+}
+.products--categ p{
+  padding-top:20px;
+  font-size:15px;
+}
+
+.products--categ-btn{
+  justify-content: space-between;
+}
+.products--categ--slider{
+  position: relative;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.342)),url("./assets/bodybuilding-bench-standing-training-exercise-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  backdrop-filter:blur(40px);
+  border-radius: 20px;
+}
+.products--categ--context,.products--categ--slider{
+  width:45%;
+  padding:20px;
+}
+
+.product--btn{
+  z-index:20;
+  top:50%;
+  left:50%;
+  transform: translate('-50%.-50%');
+}
+.products--slide-card--item{
+  /* background-image:linear-gradient(to left,rgba(215, 46, 46, 0.397),rgba(220, 12, 12, 0.904),rgba(234, 55, 55, 0.918)); */
+  align-items: center;
+  width:60%;
+  cursor: pointer;
+}
+.product--slide-card--item--desc {
+  bottom:15%;
+  
+}
+.card-img{
+  border-radius: 20px;
+}
+@media(max-width:976px){
+  .products--slide-card--item{
+    width:70%;
+  }
+  .products--categ--context,.products--categ--slider{
+    width:100%;
+  }
+}
+@media(max-width:576px){
+  .products--categ--context,.products--categ--slider{
+    width:100%;
+  }
+  .products--slide-card--item{
+    width:100%;
+  }
+}
+.swiper-button-prev,.swiper-button-next{
+  border-radius: 50%;
+  padding:23px;
+  background-color: #efe5e5;
+}
+.swiper-pagination-bullet{
+  background:#abf213;
+} 
