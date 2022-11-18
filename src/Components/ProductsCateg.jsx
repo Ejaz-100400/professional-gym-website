@@ -32,7 +32,7 @@ export default function ProductsCateg(){
             <button className="btn btn-success  p-2 w-25 mt-5">BUY NOW</button>
             </div>
         </div>
-        <div className='products--categ--slider p-5 d-flex '>
+        <div className='products--categ--slider p-1 d-flex '>
         <h1 className="text-light text-center position-absolute">DOUBLE CLICK</h1>
         <Swiper 
                 modules={[Pagination,EffectCoverflow,Navigation]}

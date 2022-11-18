@@ -24,7 +24,7 @@ export default function ProductsSlideCard(props){
             <i class="fa-sharp fa-solid fa-bookmark "><span></span></i>
             <span class='bookmark--desc'>{props.Offer}% <br></br>OFF</span>
             
-           <img className="card-img w-100"src={props.card_img_src} width="403" height="415"></img>
+           <img className="card-img "src={props.card_img_src} width="403" height="415"></img>
            <div className="product--slide-card--item--desc text-light position-absolute p-3">
             <h4>{props.ProductName}</h4>
             <h3>{props.kg}/SERVING</h3>
