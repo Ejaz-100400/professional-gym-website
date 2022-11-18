@@ -27,7 +27,7 @@ export default function ProductsDescBar(){
     return(
         // position-absolute
         <div className="overflow-hidden position-absolute w-100 prod-desc-disp" style={{display:close?'block':'none',transition:'all 2s ease-in'}}>
-        <div className="products-desc-bar m-5 d-flex">
+        <div className="products-desc-bar d-flex">
         <i onClick={closebtn} 
         class="fa-solid text-danger fa-xmark  fa-3x position-absolute"></i>
         <Swiper navigation={true} 

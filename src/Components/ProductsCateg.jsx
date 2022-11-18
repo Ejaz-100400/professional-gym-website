@@ -20,7 +20,7 @@ export default function ProductsCateg(){
         )
     })
     return(
-    <div className="products--categ d-flex">
+    <div className="products--categ p-2 d-flex">
         <ProductsDescBar/>
         <div className="products--categ--context mt-5">
         <h1 className='category--context text-left text-light'>Reach your goals with our products</h1>
@@ -33,7 +33,7 @@ export default function ProductsCateg(){
             </div>
         </div>
         <div className='products--categ--slider p-1 d-flex '>
-        <h1 className="text-light text-center position-absolute">DOUBLE CLICK</h1>
+        <h5 className="text-light text-center position-absolute p-3">DOUBLE CLICK</h5>
         <Swiper 
                 modules={[Pagination,EffectCoverflow,Navigation]}
                 style={{

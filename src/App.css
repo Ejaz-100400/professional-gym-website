@@ -7,7 +7,7 @@
   word-spacing:5px;
 } */
 ::-webkit-scrollbar{
-  width:10px;
+  width:0px;
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0);
@@ -294,7 +294,14 @@ ul li{
   border-radius: 20px;
   border:5px solid white;
 }
-
+.products--slide-card--item>.card-img{
+  width: 80%;
+}
+@media(max-width:567px){
+  .products--slide-card--item>.card-img{
+    width:100%;
+  }
+}
 .card--context{
   padding:20px 20px;
   position:absolute;
@@ -475,7 +482,7 @@ ul li{
   flex-wrap: wrap;
   gap: 5px;
   transition:all 0.2s ease-in;
-  border-radius:25px;
+  border-radius:3%;
   padding:10px;
   position: relative;
 }
@@ -549,20 +556,25 @@ ul li{
 
 .products-desc-bar {
   z-index:2;
-  border-radius: 20px;
-  background-color: #4c7474b5;
+  border-radius:3%;
+  background-image: linear-gradient(#2b2e2eb5,#171c1cb5,#191c1cb5),url("https://wallpaperaccess.com/full/1245044.jpg");
+  background-size: cover;
   backdrop-filter: blur(10px);
   position: relative;
 }
 .prod-desc-disp{
   transition:all 0.5s ease-in-out;
+  left:0%;
+  top:0%;
+  
 }
 @media(max-width:567px){
-  .products-desc-barr{
+  .products-desc-bar{
     width:100%;
   }
   .prod-desc-disp{
     top:50%;
+    left:0%;
   }
   .products--desc--panel{
     height:400
@@ -578,7 +590,7 @@ ul li{
 .products--desc--panel{
   overflow-y: scroll;
   overflow-x: hidden;
-  height:350px;
+  height:400px;
 }
 
 .products--desc--main{
