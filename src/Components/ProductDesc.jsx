@@ -1,7 +1,7 @@
 export default[
     {
         id:1,
-        card_img_src:'src/assets/wp5643116.jpg',
+        card_img_src:'./src/assets/wp5643116.jpg',
         ProductName:'Muscular Gain Protein',
         kg:'30KG',
         Price:'₹1,999',
@@ -22,7 +22,7 @@ export default[
     },
     {
         id:2,
-        card_img_src:'src/assets/wp5643116.jpg',
+        card_img_src:'./src/assets/wp5643116.jpg',
         ProductName:'Muscular Whey Protein',
         kg:'35KG',
         Price:'₹2,699',
@@ -43,7 +43,7 @@ export default[
     },
     {
         id:3,
-        card_img_src:'src/assets/wp5643116.jpg',
+        card_img_src:'./src/assets/wp5643116.jpg',
         ProductName:'Muscular Lost Weight',
         kg:'25KG',
         Price:'₹2,599',
@@ -64,7 +64,7 @@ export default[
     },
     {
         id:4,
-        card_img_src:'src/assets/wp5643116.jpg',
+        card_img_src:'./src/assets/wp5643116.jpg',
         ProductName:'Muscular For Kids',
         Price:'₹1,399',
         kg:'10KG',
