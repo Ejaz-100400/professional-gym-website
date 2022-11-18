@@ -10,7 +10,7 @@ export  default function Header(){
                 <a class='text-decoration-none'>
                     <img width='200'src={imglogo}></img>
                 </a>
-                <ul className="d-flex list-unstyled nav--menu p-4">
+                <ul className="d-flex list-unstyled nav--menu  p-4">
                     <li>Home</li>
                     <li>About Me</li>
                     <li>Community</li>

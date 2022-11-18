@@ -50,11 +50,7 @@
   height:15%;
   transition: all 0.3s ease-in-out;
 }
-@media(max-width:967px){
-  ul li{
-    display:none;
-  }
-}
+
 .navbar--main{
   justify-content: space-between;
   padding:20px;
@@ -69,6 +65,11 @@
   gap:50px;
   font-size:20px;
   right:60px;
+}
+@media(max-width:768px){
+  .nav--menu>li{
+    display:none;
+  }
 }
 .Header .btn{
   background-color: #FF8B0C;
@@ -565,7 +566,7 @@ ul li{
 .prod-desc-disp{
   transition:all 0.5s ease-in-out;
   left:0%;
-  top:0%;
+  top:2%;
   
 }
 @media(max-width:567px){
@@ -573,11 +574,8 @@ ul li{
     width:100%;
   }
   .prod-desc-disp{
-    top:50%;
+    top:0%;
     left:0%;
-  }
-  .products--desc--panel{
-    height:400
   }
 }
 /* hello r u there */
@@ -628,4 +626,30 @@ ul li{
 }
 .product--main--sliders--context>div>span{
 font-size:20px;
+}
+.product--main--review{
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.progress{
+  background-color: #abf213;
+  width: 300px;
+  border:transparent;
+  margin-bottom: 20px;
+}
+@media(max-width:567px){
+  .progress{
+    width: 180px;
+  }
+}
+.review--main--progress{
+  place-items: center;
+  align-items: center;
+}
+.review--panel{
+  justify-content:space-between;
+  align-items: center;
+  gap:10px;
+  flex-wrap: wrap;
 }

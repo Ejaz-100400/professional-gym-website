@@ -7,7 +7,7 @@ export default[
         Price:'₹1,999',
         Offer:'10',
         Madefor:'WHEY PROTEIN ISOLATE was developed by our passionate weight training team to help you reach your goals.',
-        Advantages:['Good quality','Protein Content','Flavour'],
+        Advantages:'Good quality ,Protein Content ,Flavour',
         Reviews:[
             'Tastes good',
             'Provides good content and quality',
@@ -28,7 +28,7 @@ export default[
         Price:'₹2,699',
         Offer:'12',
         Madefor:'WHEY PROTEIN ISOLATE was developed by our passionate weight training team to help you reach your goals.',
-        Advantages:['Good quality','Protein Content','Flavour'],
+        Advantages:'Good quality ,Protein Content ,Flavour',
         Reviews:[
             'Tastes good',
             'Provides good content and quality',
@@ -49,7 +49,7 @@ export default[
         Price:'₹2,599',
         Offer:'15',
         Madefor:'WHEY PROTEIN ISOLATE was developed by our passionate weight training team to help you reach your goals.',
-        Advantages:['Good quality','Protein Content','Flavour'],
+        Advantages:'Good quality ,Protein Content ,Flavour',
         Reviews:[
             'Tastes good',
             'Provides good content and quality',
@@ -70,7 +70,7 @@ export default[
         kg:'10KG',
         Offer:'10',
         Madefor:'WHEY PROTEIN ISOLATE was developed by our passionate weight training team to help you reach your goals.',
-        Advantages:['Good quality','Protein Content','Flavour'],
+        Advantages:'Good quality ,Protein Content ,Flavour',
         Reviews:[
             'Tastes good',
             'Provides good content and quality',
