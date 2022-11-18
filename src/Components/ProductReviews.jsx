@@ -1,6 +1,15 @@
-export default function ProductReviews(){
+import ReviewData from "./ReviewData"
+import ReviewDesc from "./ReviewDesc"
+export default function ProductReviews(props){
+    const reviewdata=ReviewData.map((review)=>{
+        return(
+            <ReviewDesc key={review.id}
+            {...review}/>
+        )
+    })
     return(
-        <div className="product--main--review pt-5 d-flex">
+    <div className="product-review">
+    <div className="product--main--review pt-5 d-flex">
         <div className="review--main--nos text-warning pt-3 d-grid">
             <h1>Reviews</h1>
             <h1>4.1</h1>
@@ -10,40 +19,54 @@ export default function ProductReviews(){
             <div className="review--panel d-flex mt-5">
                 <span className="text-light pb-3">5<i class="fa-solid p-1 fa-star "></i></span>
                 <div className="progress">
+                <div className="progress--fill">
                 <span></span>
+                </div>
                 </div>
                 <span className="text-light pb-3">6 responses</span>
             </div>
             <div className="review--panel d-flex mt-3">
                 <span className="text-light pb-3">4<i class="fa-solid p-1 fa-star "></i></span>
                 <div className="progress">
+                <div className="progress--fill">
                 <span></span>
+                </div>
                 </div>
                 <span className="text-light pb-3">6 responses</span>
             </div>
             <div className="review--panel d-flex mt-3">
                 <span className="text-light pb-3">3<i class="fa-solid p-1 fa-star "></i></span>
                 <div className="progress">
+                <div className="progress--fill">
                 <span></span>
+                </div>
                 </div>
                 <span className="text-light pb-3">6 responses</span>
             </div>
             <div className="review--panel d-flex mt-3">
                 <span className="text-light pb-3">4<i class="fa-solid p-1 fa-star "></i></span>
                 <div className="progress">
+                <div className="progress--fill">
                 <span></span>
+                </div>
                 </div>
                 <span className="text-light pb-3">6 responses</span>
             </div>
             <div className="review--panel d-flex mt-3">
                 <span className="text-light pb-3">1<i class="fa-solid p-1 fa-star "></i></span>
                 <div className="progress">
+                <div className="progress--fill">
                 <span></span>
+                </div>
                 </div>
                 <span className="text-light pb-3">6 responses</span>
             </div>
         </div>
         <button className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
+    </div>
+    <div className="review-container">
+        {reviewdata}
+    </div>
     </div>
     )
 }

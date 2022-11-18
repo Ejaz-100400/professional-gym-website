@@ -564,9 +564,21 @@ ul li{
   position: relative;
 }
 .prod-desc-disp{
-  transition:all 0.5s ease-in-out;
+  animation:fadein 0.5s ease-in-out;
   left:0%;
   top:2%;
+}
+@keyframes fadein{
+  from{
+    opacity:0.5;
+    /* transform:translateY(-20%); */
+    z-index:20;
+  }
+  to{
+    opacity:1;
+    /* transform:translateY(0%); */
+    z-index:20;
+  }
   
 }
 @media(max-width:567px){
@@ -633,10 +645,18 @@ font-size:20px;
   flex-wrap: wrap;
 }
 .progress{
-  background-color: #abf213;
+  background-color: #000000bb;
   width: 300px;
   border:transparent;
   margin-bottom: 20px;
+}
+.progress--fill:nth-child(2n+1){
+  width:70%;
+  background-color: #abf213;
+}
+.progress-fill:nth-child(2){
+  width:70%;
+  background-color: #abf213;
 }
 @media(max-width:567px){
   .progress{
