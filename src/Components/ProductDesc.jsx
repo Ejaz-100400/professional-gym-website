@@ -2,7 +2,7 @@ export default[
     {
         id:1,
         No_of_Reviews:21,
-        card_img_src:'./src/assets/91moGDh-MhL._SL1500_.jpg',
+        card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
         ProductName:'Muscular Gain Protein',
         kg:'30KG',
         Price:'₹1,999',
@@ -55,7 +55,7 @@ export default[
         ],        
         Quantity:'1',
         Manufactured_by:'Decathlon Sports, Chennai',
-        Nutritional_Facts:''
+        Nutritional_Facts:'Per 100g Per 30g Energy 383 kcal 114.9kcal Carbohydrates 10g 3g (Sugar as Sucrose 2.5g 0.75g Protein 80.1g 24.03g Fat 2.5g 0.75g Saturated fatty Acid 1.08g 0.32g Monunsaturate fatty Acid 0.69g 0.21g Polyunsaturated fatty Acid 0.60g 0.18g Trans fat 0 0'
     },
     {
         id:4,
@@ -74,6 +74,6 @@ export default[
         ],
         Quantity:'1',
         Manufactured_by:'Decathlon Sports, Chennai',
-        Nutritional_Facts:''
+        Nutritional_Facts:'Per 100g Per 30g Energy 383 kcal 114.9kcal Carbohydrates 10g 3g (Sugar as Sucrose 2.5g 0.75g Protein 80.1g 24.03g Fat 2.5g 0.75g Saturated fatty Acid 1.08g 0.32g Monunsaturate fatty Acid 0.69g 0.21g Polyunsaturated fatty Acid 0.60g 0.18g Trans fat 0 0'
     }
 ]
