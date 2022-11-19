@@ -35,6 +35,8 @@ export default function ProductsDescBar(){
         pagination={true} 
         style={{
             '--swiper-wrapper-zIndex': '3',
+            "--swiper-navigation-size": "20px",
+            "--swiper-pagination-bullet-size":"1px"
         }}
         className="mySwiper">  
             {productsdescdata}

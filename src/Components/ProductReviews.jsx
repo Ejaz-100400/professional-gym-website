@@ -64,7 +64,7 @@ export default function ProductReviews(props){
         </div>
         <button className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
     </div>
-    <div className="review-container">
+    <div className="review">
         {reviewdata}
     </div>
     </div>

@@ -37,7 +37,7 @@ export default function ProductsCateg(){
         <Swiper 
                 modules={[Pagination,EffectCoverflow,Navigation]}
                 style={{
-                    "--swiper-navigation-size": "20px",
+                    "--swiper-navigation-size": "10px",
                     "--swiper-pagination-bullet-size":"13px"
                   }}
                 pagination={true}

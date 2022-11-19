@@ -15,11 +15,23 @@ export default function ProductsDescBar(props){
                     <img src={props.card_img_src} width='300' height='340'></img>
                 </div>
              </div>
-             <div className='product--main--sliders position-relative p-5'>
+             <div className='product--main--sliders position-relative p-3'>
                 <div class="product--main--sliders--context">
                     <div className="d-grid">
+                        <div className="d-flex product--main--desc">
+                        <div className='product--desc--group'>
                         <h2 className="text-primary text-light">Need for?</h2>
-                        <span className="text-light display-4">{props.Madefor}</span>
+                        <span className="text-light">{props.Madefor}</span>
+                        </div>
+                        <div className='product--desc--group'>
+                        <h2 className="text-primary text-light">Manufactured By</h2>
+                        <span className="text-light">{props.Manufactured_by}</span>
+                        </div>
+                        <div className="bg-success product--desc--group mt-4 p-3">
+                        <h2 className="text-primary text-light text-center">NUTRITIONAL FACT</h2>
+                        <p className='text-dark'>{props.Nutritional_Facts}</p>
+                        </div>
+                        </div>
                     <div className="product--review--section">
                         <ProductReviews/>
                     </div>
