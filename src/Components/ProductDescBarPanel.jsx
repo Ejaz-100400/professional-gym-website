@@ -2,7 +2,7 @@ import React from 'react';
 import ProductReviews from './ProductReviews';
 export default function ProductsDescBar(props){
     return(
-        <div className="products--desc--panel" >
+        <div className="products--desc--panel " >
             <div className="products--desc--main d-flex">
                 <div className="products--desc--main--context d-grid">
                     <h2 className="text-light text-left text-uppercase w-100">{props.ProductName}<br></br>{props.kg}</h2>

@@ -22,13 +22,15 @@
 }
 .black-bg-2{
   /* background:linear-gradient(to top right,#000000,rgb(8, 8, 8),rgb(0, 0, 0)); */
-  background-color: #13130f; 
+  /* background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D); */
+  background-color: #0f0d0d;
   transition:all .2s linear;
 }
 .black-bg-3{
   background-color: #abf213; 
   transition:all .2s linear;
 }
+
 /* .black-bg{
   position:absolute;
   background-color: #2F2D2D;
@@ -601,6 +603,7 @@ ul li{
   overflow-y: scroll;
   overflow-x: hidden;
   height:400px;
+  padding:20px;
 }
 
 .products--desc--main{
@@ -610,6 +613,9 @@ ul li{
 @media(max-width:567px){
   .products--desc--main{
     justify-content: space-around;
+  }
+  .products--desc--panel {
+    padding:0px;
   }
 }
 .products--desc--main--context{
@@ -639,11 +645,16 @@ ul li{
 .product--main--sliders--context>div>span{
 font-size:20px;
 }
+.prouct--review--desc{
+  background:#898e7f7e;
+  backdrop-filter:blur(10px)
+}
 .product--main--review{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .progress{
   background-color: #000000bb;
   width: 300px;
@@ -672,4 +683,17 @@ font-size:20px;
   align-items: center;
   gap:10px;
   flex-wrap: wrap;
+}
+.like-dislike{
+gap:16px;
+}
+.fa-thumbs-up,.fa-thumbs-down{
+  transition: all 0.1s ease-in-out;
+  cursor:pointer;
+}
+.fa-star{
+  color:yellow;
+}
+.new1 {
+  border-top: 2px solid red;
 }
