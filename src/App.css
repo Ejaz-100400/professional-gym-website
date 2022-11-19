@@ -768,6 +768,11 @@ gap:16px;
  background-color: #ffffff;
  border-radius: 20px;
 }
+@media(max-width:567px){
+  .products--newreview--panel{
+    width:100%;
+  }
+}
 .form--review{
   place-items: center;
 }
