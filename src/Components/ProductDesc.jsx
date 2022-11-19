@@ -2,7 +2,7 @@ export default[
     {
         id:1,
         No_of_Reviews:21,
-        card_img_src:'./src/assets/91moGDh-MhL._SL1500_.jpg',
+        card_img_src:'../src/assets/91moGDh-MhL._SL1500_.jpg',
         ProductName:'Muscular Gain Protein',
         kg:'30KG',
         Price:'₹1,999',
