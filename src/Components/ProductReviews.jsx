@@ -62,11 +62,17 @@ export default function ProductReviews(props){
                 <span className="text-light pb-3">6 responses</span>
             </div>
         </div>
-        <button className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
+        <button onClick={revi} id='rever' className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
     </div>
     <div className="review">
         {reviewdata}
     </div>
     </div>
     )
+    function revi(){
+    const but=document.getElementById('rever')
+    but.addEventListener('click',function(){
+        document.querySelector('.products-newreview').style.display="block";
+    })
+}
 }

@@ -261,6 +261,13 @@ ul li{
     transform:translateX(20%)
   }
 }
+
+
+
+
+
+
+
 .gym--category>h1{
   font-size:45px;
 } 
@@ -347,6 +354,12 @@ ul li{
   position:absolute;
   bottom:100px;
 }
+
+
+
+
+
+
 
 
 .exercise--categ{
@@ -481,6 +494,12 @@ ul li{
   color:black;
 }
 
+
+
+
+
+
+
 .products--categ{
   flex-wrap: wrap;
   gap: 5px;
@@ -578,6 +597,9 @@ ul li{
 
 
 
+
+
+
 .products-desc-bar {
   z-index:2;
   border-radius:3%;
@@ -666,6 +688,9 @@ ul li{
 .product--main--sliders--context>div>span{
 font-size:20px;
 }
+
+
+
 .prouct--review--desc{
   background:#898e7f7e;
   backdrop-filter:blur(10px)
@@ -717,4 +742,36 @@ gap:16px;
 }
 .new1 {
   border-top: 2px solid red;
+}
+
+.newreview--panel{
+  height:100%;
+  width:200%;
+}
+
+.products-newreview{
+  /* background-color: #6869642c;
+  backdrop-filter:blur(20px); */
+  position:fixed;
+  width:100%;
+  height:100vh;
+  z-index:4;
+  top:50%;
+}
+.products--newreview--panel{
+  position: absolute;
+  left:50%;
+  top:0%;
+  transform:translate(-50%, -50%);
+  padding:20px;
+  width:50%;
+ background-color: #ffffff;
+ border-radius: 20px;
+}
+.form--review{
+  place-items: center;
+}
+.input-group{
+  gap:20px;
+  align-items: center;
 }

@@ -22,7 +22,7 @@ export default function ProductsCateg(){
     return(
     <div className="products--categ p-2 d-flex">
         <ProductsDescBar/>
-        <div className="products--categ--context mt-5">
+        <div className="products--categ--context">
         <h1 className='category--context text-left text-light'>Reach your goals with our products</h1>
         <p className="w-100 pt-5 text-light">Satisfied more than thousand professional athletes and body-builders and 
             we are happy to share our products to increase more satisfied athletes and professional builders.

@@ -34,6 +34,7 @@ export default function ReviewDesc(props){
     }
     return(
         <div className="prouct--review--desc m-2 p-3">
+            <div className="prouct--review--panel">
             <div className="review--desc d-grid">
                 <h2 className="text-light">{props.Reviewer_Name}</h2>
             </div>
@@ -53,6 +54,7 @@ export default function ReviewDesc(props){
             </i>
             </div>
             <div className="new1 mt-4"></div>
+            </div>
         </div>
     )
 }
