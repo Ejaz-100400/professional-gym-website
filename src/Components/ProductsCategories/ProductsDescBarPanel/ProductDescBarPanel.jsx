@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductReviews from './ProductReviews';
+import ProductReviews from './Reviews/ProductReviews';
 export default function ProductsDescBar(props){
     return(
         <div className="products--desc--panel " >

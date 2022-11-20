@@ -1,4 +1,4 @@
-import gympic from '../assets/image-removebg-preview.png'
+import gympic from '../../assets/image-removebg-preview.png'
 export default function Main(){
     return(
         <div className="main container d-flex">

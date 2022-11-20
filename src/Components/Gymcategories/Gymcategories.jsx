@@ -1,5 +1,5 @@
 import  Cards from './Cards'
-import Carddetails from './Carddetails'
+import Carddetails from '../Datas/Carddetails'
 export default function Gymcategories(){
 
     window.onscroll=function(){

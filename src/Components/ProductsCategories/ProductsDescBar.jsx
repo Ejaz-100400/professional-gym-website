@@ -1,6 +1,6 @@
 import React from 'react'
-import ProductDesc from "./ProductDesc"
-import ProductDescBarPanel from "./ProductDescBarPanel"
+import ProductDesc from "../Datas/ProductDesc"
+import ProductDescBarPanel from "./ProductsDescBarPanel/ProductDescBarPanel"
 import {Swiper,SwiperSlide} from 'swiper/react'
 import{Navigation,Pagination} from 'swiper'
 import 'swiper/css/navigation'

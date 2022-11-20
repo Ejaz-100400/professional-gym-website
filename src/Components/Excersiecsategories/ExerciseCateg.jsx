@@ -1,6 +1,5 @@
 import SlideCard from './SlideCard'
-import SlideCardData from './SlideCardData'
-import ProductsCateg from './ProductsCateg'
+import SlideCardData from '../Datas/SlideCardData'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import{Navigation, EffectFade} from 'swiper'
 import 'swiper/css/navigation'
@@ -94,12 +93,6 @@ export default function ExerciseCateg(){
                     {carddata}
                 </Swiper>
                 </div>
-                {/* <div className='slide--nos d-flex text-light'>
-                    <span onClick={slidenos}>1</span>
-                    <span onClick={slidenos}>2</span>
-                    <span onClick={slidenos}>3</span>
-                    <span onClick={slidenos}>4</span>
-                </div> */}
                 </div>
             </section>
         </div>

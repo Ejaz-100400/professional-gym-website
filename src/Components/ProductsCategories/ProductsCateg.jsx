@@ -1,7 +1,7 @@
 
-import ProductsDesc from "./ProductDesc"
+import ProductsDesc from "../Datas/ProductDesc"
 import ProductsSlideCard from "./ProductsSlideCard"
-import ProductsDescBar from "./ProductsDescBar"
+import ProductsDescBar from "./ProductsDescBar" 
 import {Swiper,SwiperSlide} from 'swiper/react'
 import{Navigation,EffectCoverflow,Pagination} from 'swiper'
 import 'swiper/css/navigation'
