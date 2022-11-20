@@ -15,11 +15,16 @@
 /* #root{
 
   } */
-.black-bg-1{
-  /* background:linear-gradient(to top right,#2e2e2e,rgba(255, 166, 0, 0.772),black); */
+/* .black-bg-1{
+  background:linear-gradient(to top right,#2e2e2e,rgba(255, 166, 0, 0.772),black);
   background-color: #f9e104;
+  background:url('../src/assets/homebg3.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition:all .2s linear;
-}
+} */
+
 .black-bg-2{
   /* background:linear-gradient(to top right,#000000,rgb(8, 8, 8),rgb(0, 0, 0)); */
   /* background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D); */
@@ -52,7 +57,24 @@
   height:15%;
   transition: all 0.3s ease-in-out;
 }
-
+.main{
+  background:url('../src/assets/homebg3.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition:all .2s linear;
+}
+@media(max-width:976px){
+  .main{
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  }
+.main--content{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .navbar--main{
   justify-content: space-between;
   padding:20px;

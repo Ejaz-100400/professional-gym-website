@@ -3,7 +3,7 @@ import Carddetails from '../Datas/Carddetails'
 export default function Gymcategories(){
 
     window.onscroll=function(){
-        if(document.documentElement.scrollTop>730){
+        if(document.documentElement.scrollTop>650){
             document.querySelector('.App').classList.remove('black-bg-1')
             document.querySelector('.App').classList.add('black-bg-2')
         }
