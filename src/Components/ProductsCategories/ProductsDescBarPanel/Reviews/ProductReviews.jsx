@@ -1,4 +1,4 @@
-import ReviewData from "C:/Users/Ejaz Ahmed/OneDrive/Desktop/gym-ecommerce/src/Components/Datas/ReviewData"
+import ReviewData from "../../../Datas/ReviewData"
 import ReviewDesc from "./ReviewDesc"
 export default function ProductReviews(props){
     const reviewdata=ReviewData.map((review)=>{
