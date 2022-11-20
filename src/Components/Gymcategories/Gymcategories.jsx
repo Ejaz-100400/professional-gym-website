@@ -3,13 +3,13 @@ import Carddetails from '../Datas/Carddetails'
 export default function Gymcategories(){
 
     window.onscroll=function(){
-        if(document.documentElement.scrollTop>650){
-            document.querySelector('.App').classList.remove('black-bg-1')
-            document.querySelector('.App').classList.add('black-bg-2')
+        if(document.documentElement.scrollTop>600){
+            document.querySelector('.scroll-anim').classList.remove('bg-main-scroll')
+            document.querySelector('.scroll-anim').classList.add('black-bg-2')
         }
         else{
-            document.querySelector('.App').classList.remove('black-bg-2')
-            document.querySelector('.App').classList.add('black-bg-1')
+            document.querySelector('.scroll-anim').classList.remove('black-bg-2')
+            document.querySelector('.scroll-anim').classList.add('bg-main-scroll')
         }
         if(document.documentElement.scrollTop>0){
             document.querySelector('.Header').style.backgroundColor="#ffffff42"
@@ -38,11 +38,11 @@ export default function Gymcategories(){
       })
     return(
         <div className="gym--category p-5">
-            <h1 className='category--context text-center text-light p-4'>For those of you who want to be<br></br> appear confident</h1>
+            <h1 className='category--context text-center p-4'>For those of you who want to be<br></br> appear confident</h1>
             <div className="card--items d-flex">
                 {carddata}
             </div>
-            <p className='text-center text-light p-3'>"Everyone starts from a different starting line, what do you want to start with🔥"</p>
+            <p className='text-center p-3'>"Everyone starts from a different starting line, what do you want to start with🔥"</p>
         </div>
     )
 }

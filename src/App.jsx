@@ -20,10 +20,12 @@ function App() {
     <div className="App black-bg-1">
       <Header/>
       <Main />
+      <div className='bg-main-scroll scroll-anim'>
       <Gymcategories />
       <ExerciseCateg />
       <ProductsCateg/>
-        <NewReview/>
+      <NewReview/>
+      </div>
     </div>
   )
 }

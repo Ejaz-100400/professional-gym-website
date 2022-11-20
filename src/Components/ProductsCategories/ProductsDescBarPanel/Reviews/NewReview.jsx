@@ -3,13 +3,10 @@ export default function NewReview(){
     const[rating,setrating]=React.useState(null)
     const[hoverrating,sethoverrating]=React.useState(null)
     const [closeform,setcloseform]=React.useState(false)
-    function closebtnform(){
-        setcloseform(prevState=>!prevState)
-    } 
     return(
         <div className="products-newreview" style={{display:closeform?'block':'none',color:'white'}}>
         <div className="products--newreview--panel" id='newreview'>
-                <i onClick={closebtnform}class="fa-solid fa-xmark position-absolute fa-2x text-danger"></i>
+                <i onClick={closebtnform} class="fa-solid fa-xmark position-absolute fa-2x text-danger"></i>
                 <h4 className="text-center">WRITE REVIEW, PUBLISH</h4>
                 <hr></hr>
                 <form className="form--review d-grid p-2 m-1">
@@ -46,4 +43,7 @@ export default function NewReview(){
         </div>
         </div>
     )
+    function closebtnform(){
+        setcloseform(prevState=>!prevState)
+    } 
 }

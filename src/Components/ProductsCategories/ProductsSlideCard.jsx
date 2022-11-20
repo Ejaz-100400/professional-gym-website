@@ -2,22 +2,7 @@ import React from "react";
 
 export default function ProductsSlideCard(props){
     const [display,setdisplay] =React.useState();
-    function dis(){
-        setdisplay(prestate=>{
-            prestate=document.querySelectorAll('.desc-btn')
-            prestate.forEach((ele)=>{
-                ele.addEventListener('click',function(){
-                    let dispsec=document.querySelector('.prod-desc-disp')
-                    if(dispsec.style.display=='none'){
-                        dispsec.style.display="block"
-                    }
-                    else{
-                        dispsec.style.display="none"
-                    }
-                })
-            })
-        })
-    }
+   
     return(
         <div className="products--slider">
         <div className="products--slide-card--item d-grid">
@@ -33,5 +18,22 @@ export default function ProductsSlideCard(props){
         </div>
         </div>    
     )
+    function dis(){
+        setdisplay(prestate=>{
+            prestate=document.querySelectorAll('.desc-btn')
+            prestate.forEach((ele)=>{
+                ele.addEventListener('click',function(){
+                    let dispsec=document.querySelector('.prod-desc-disp')
+                    if(dispsec.style.display=='none'){
+                        dispsec.style.display="block"
+                    }
+                    else{
+                        dispsec.style.display="none"
+                    }
+                    // $('.prod-desc-disp').slideDown(200);
+                })
+            })
+        })
+    }
 
 }

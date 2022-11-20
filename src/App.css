@@ -24,12 +24,16 @@
   background-repeat: no-repeat;
   transition:all .2s linear;
 } */
-
+.bg-main-scroll{
+  background-color: #000000;
+  color:black;
+}
 .black-bg-2{
   /* background:linear-gradient(to top right,#000000,rgb(8, 8, 8),rgb(0, 0, 0)); */
-  /* background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D); */
-  background-color: #0f0d0d;
-  transition:all .2s linear;
+  background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D);
+  /* background-color: #0e070f;*/
+  transition:all .2s ease-in-out;
+  color:white;
 }
 .black-bg-3{
   background-color: #abf213; 
@@ -58,18 +62,27 @@
   transition: all 0.3s ease-in-out;
 }
 .main{
-  background:url('../src/assets/homebg3.png');
+  background:linear-gradient(to top right,rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.377)),url('../src/assets/homebg3.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   transition:all .2s linear;
+  min-height:100vh;
 }
 @media(max-width:976px){
   .main{
     background-position:center;
     background-repeat: no-repeat;
   }
+
   }
+@media(max-width:567px){
+  .main--toggle{
+    font-size:15px;
+  }
+  .main--context{
+  }
+}
 .main--content{
   flex-direction: column;
   justify-content: center;
@@ -154,9 +167,10 @@ ul li{
 }
 
 .main--btns{
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   z-index:10;
+  gap:50px;
 
 }
 .main--btns>button{

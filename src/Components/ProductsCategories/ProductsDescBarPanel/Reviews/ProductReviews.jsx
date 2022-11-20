@@ -70,9 +70,15 @@ export default function ProductReviews(props){
     </div>
     )
     function revi(){
-    const but=document.getElementById('rever')
-    but.addEventListener('click',function(){
-        document.querySelector('.products-newreview').style.display="block";
-    })
+    const but=document.querySelectorAll('#rever')
+    but.forEach((revbtn)=>{
+        revbtn.addEventListener('click',function(){
+            // document.querySelector('.products-newreview').style.display="block";
+            $('.products-newreview').slideDown(200);
+        })
+    }) 
+        
+        
+       
 }
 }
