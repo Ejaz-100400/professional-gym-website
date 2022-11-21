@@ -1,7 +1,7 @@
 import gympic from '../../assets/image-removebg-preview.png'
 export default function Main(){
     return(
-        <div className="main  d-flex text-light text-center">
+        <div className="main  p-2 d-flex text-light text-center">
             <div className="main--content">
                 <div className="main--toggle">
                     <span className="p-3"><span className="p-2">THE BEST</span> FITNESS CLUB IN THE TOWN</span>

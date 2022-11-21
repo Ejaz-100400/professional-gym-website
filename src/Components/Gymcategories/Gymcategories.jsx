@@ -19,7 +19,7 @@ export default function Gymcategories(){
             document.querySelector('.Header').style.backgroundColor="transparent"
             document.querySelector('.Header').style.backdropFilter="none"
         }
-        if(document.documentElement.scrollTop>2300){
+        if(document.documentElement.scrollTop>2100){
             document.querySelector('.products--categ').classList.add('bg-primary')
         }
         else{

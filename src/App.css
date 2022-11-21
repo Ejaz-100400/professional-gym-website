@@ -58,14 +58,13 @@
   position: fixed;
   width:100%;
   z-index:10;
-  height:15%;
   transition: all 0.3s ease-in-out;
 }
 .main{
   background:linear-gradient(to top right,rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.377)),url('../src/assets/homebg3.png');
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   transition:all .2s linear;
   min-height:100vh;
 }
@@ -89,10 +88,11 @@
   align-items: center;
 }
 .navbar--main{
-  justify-content: space-between;
+  justify-content: space-around;
   padding:20px;
   align-items:center;
   flex-wrap: wrap;
+  height:10%;
 }
 .mavbar--main{
   justify-content: center;
@@ -123,7 +123,7 @@ ul li{
 }
 .main{
   justify-content: space-around;
-  padding:200px;
+align-items: center;
 
 }
 @media(max-width:967px){

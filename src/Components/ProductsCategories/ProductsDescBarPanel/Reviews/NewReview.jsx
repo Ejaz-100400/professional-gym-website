@@ -36,7 +36,7 @@ export default function NewReview(){
                     </div>
                     <div className="input-group p-2 d-grid">
                         <h5>Comment</h5>
-                        <input type='textarea' className="p-2" placeholder='Comment here' name='reviewTitle' required w-50/>
+                        <input type='textarea'height='200' className="p-2" placeholder='Comment here' name='reviewTitle' required w-50/>
                     </div>
                     <input type='submit' className="btn btn-primary w-50" value='SUBMIT' name='submit'></input>
                 </form>

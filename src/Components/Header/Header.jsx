@@ -16,7 +16,7 @@ export  default function Header(){
                     <li>Community</li>
                     <li>Pricing</li>
                 </ul>
-                <button class='btn p-3 mb-2'>
+                <button class='btn p-2 mb-2'>
                     <a>
                         JOIN NOW
                     </a>
