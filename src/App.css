@@ -12,6 +12,9 @@
 ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0);
 }
+html {
+  scroll-behavior: smooth;
+}
 /* #root{
 
   } */
@@ -84,24 +87,22 @@
 }
 .main--content{
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding-top:100px;
 }
 .navbar--main{
-  justify-content: space-around;
-  padding:20px;
+  justify-content: space-between;
   align-items:center;
   flex-wrap: wrap;
   height:10%;
 }
 .mavbar--main{
-  justify-content: center;
 }
 .nav--menu{
   position:relative;
   gap:50px;
   font-size:20px;
-  right:60px;
 }
 @media(max-width:768px){
   .nav--menu>li{
@@ -115,7 +116,7 @@
   clip-path: polygon(100% 75%, 90% 98%, 0% 100%, 0% 1%, 99% 1%, 100% 0%);
 }
 ul li{
-  font-weight: 600;
+  font-weight: 200;
   color:rgb(255, 255, 255);
 }
 .btn:hover{
@@ -832,3 +833,153 @@ input[type="radio"]{
 overflow-x: hidden;
 overflow-y: scroll;
 } */
+
+.pricing-section{
+  margin-top:200px;
+  place-items: center;
+  align-items: center;
+  background: url('./assets/backmuscles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pricing-section>span{
+  font-size:20px;
+}
+.toggle-section,.pricing{
+  position: relative;
+  padding:30px 10px;
+}
+.offer{
+  top:0px;
+  right:-50px;
+  border-radius: 5px;
+  color:#DEFF56;
+  background-color: rgba(255, 255, 255, 0.507);
+  backdrop-filter:blur(20px);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.pricing--card--section{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+}
+.pricing--card--item,.pricing--cards--month,.pricing--cards--yearly{
+  border-radius:20px;
+  backdrop-filter: blur(10px);
+}
+.pricing--cards-month{
+  flex-wrap: wrap;
+}
+.pricing--card--item{
+  width:400px;
+  transition:all 0.1s ease-in;
+  z-index:-1;
+  border-radius: 20px;
+  
+}
+.pricing--card--item:hover{
+transform: scale(1.03);
+background-color:#2196F3;
+z-index:4;
+
+}
+@media(max-width:576px){
+  .pricing--card--item{
+    width:300px;
+  }
+
+}
+.pricinng{
+  position: relative;
+}
+.pricing>span:nth-child(1){
+font-size:60px;
+}
+@media(max-width:567px){
+  .pricing>span:nth-child(1){
+    font-size:35px;
+  }
+}
+.pricing>span:nth-child(2){
+  position: absolute;
+  bottom:0;
+  right:0px;
+}
+.pricing-btn{
+  background-color: #abf213;
+  border-radius:5px;
+  font-weight: 600;
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.1s ease-in;
+}
+.pricing-btn:hover{
+  background-color: #abf213;
+  border-radius:5px;
+  font-weight: 900;
+  border: 2px solid rgb(255, 255, 255);
+}
+.plan-list{
+  font-weight:100;
+  font-size:19px;
+}
