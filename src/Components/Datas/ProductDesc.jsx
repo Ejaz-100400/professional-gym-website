@@ -42,7 +42,7 @@ export default[
         id:3,
         card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
         No_of_Reviews:21,
-        ProductName:'Muscular Lost Weight',
+        ProductName:'Muscular Loss Weight',
         kg:'25KG',
         Price:'₹2,599',
         Offer:'15',

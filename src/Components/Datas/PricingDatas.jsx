@@ -6,21 +6,21 @@ export default [
         price:1299,
         buttoncontext:'Try 7 days for free!',
         Plans:[
-            'Tastes good',
-            'Provides good content and quality',
-            'Excellent product',
+            'Free session for 7 days',
+            'Mentored Workspace ',
+            'Milestones will be rewarded',
         ],
     },
     {
         id:2,
         cardname:'SERIOUS GYMNERS',
         content:'Perfect to be get started!',
-        price:1299,
-        buttoncontext:'Try 7 days for free!',
+        price:1599,
+        buttoncontext:'Start your plan now!',
         Plans:[
-            'Tastes good',
-            'Provides good content and quality',
-            'Excellent product',
+            'Personal Trainers',
+            'Diet Tips and Plans',
+            '15% Offer from the above products',
         ],
     },
     {
@@ -30,9 +30,9 @@ export default [
         price:1299,
         buttoncontext:'Try 7 days for free!',
         Plans:[
-            'Tastes good',
-            'Provides good content and quality',
-            'Excellent product',
+            'Allocated to trainers in groups',
+            'Diet Tips and Plans',
+            'Healthy Cardio Workouts',
         ],
     }
 ]

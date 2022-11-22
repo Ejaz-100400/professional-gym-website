@@ -1,10 +1,29 @@
 import React from "react"
 export default function NewReview(){
+    // star rating states
     const[rating,setrating]=React.useState(null)
     const[hoverrating,sethoverrating]=React.useState(null)
     const [closeform,setcloseform]=React.useState(false)
+    // formdata states
+    const[formData,setformData]=React.useState(
+        {
+            'reviewtitle':'',
+             'comments':'',
+        }
+    )
+    console.log(formData)
+    function handleReview(event){
+        setformData(prevforData=>{
+        event.preventDefault()
+          return{
+            ...prevforData,
+            [event.target.name]:event.target.value
+          }
+        })
+
+    }
     return(
-        <div className="products-newreview" style={{display:closeform?'block':'none',color:'white'}}>
+        <div className="products-newreview ml-3 mr-3" style={{display:closeform?'block':'none',color:'white'}}>
         <div className="products--newreview--panel" id='newreview'>
                 <i onClick={closebtnform} class="fa-solid fa-xmark position-absolute fa-2x text-danger"></i>
                 <h4 className="text-center">WRITE REVIEW, PUBLISH</h4>
@@ -18,13 +37,13 @@ export default function NewReview(){
                             return (
                             <label>
                                 <input type='radio' 
-                                name='rating' 
-                                value={ratingval}
-                                onClick={()=>setrating(ratingval)} />
+                                       name='rating' 
+                                       value={ratingval}
+                                       onClick={()=>setrating(ratingval)} />
                                 <i className="fa-solid fa-star fa-1x"
-                                onMouseEnter={()=>sethoverrating(ratingval)}
-                                onMouseLeave={()=>sethoverrating( null )}
-                                style={{color:ratingval<=(hoverrating ||rating)?'yellow':'silver'}}></i>
+                                    onMouseEnter={()=>sethoverrating(ratingval)}
+                                    onMouseLeave={()=>sethoverrating( null )}
+                                    style={{color:ratingval<=(hoverrating ||rating)?'yellow':'silver'}}></i>
                             </label>
                             )
                         })}
@@ -32,11 +51,11 @@ export default function NewReview(){
                     </div>
                     <div className="input-group p-2 d-grid">
                         <h5>Review Title</h5>
-                        <input type='textarea' className="p-2" placeholder='Review Title' name='reviewTitle' required w-50/>
+                        <input type='textarea' className="p-2" placeholder='Review Title' name='reviewtitle' required w-50 onChange={handleReview}/>
                     </div>
                     <div className="input-group p-2 d-grid">
                         <h5>Comment</h5>
-                        <input type='textarea'height='200' className="p-2" placeholder='Comment here' name='reviewTitle' required w-50/>
+                        <input type='textarea' height='200' className="p-2" placeholder='Comment here' name='comments' onChange={handleReview}  required w-50/>
                     </div>
                     <input type='submit' className="btn btn-primary w-50" value='SUBMIT' name='submit'></input>
                 </form>

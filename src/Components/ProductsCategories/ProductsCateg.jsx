@@ -1,4 +1,4 @@
-
+import muscleicon from '../../assets/muscle-unscreen.gif'
 import ProductsDesc from "../Datas/ProductDesc"
 import ProductsSlideCard from "./ProductsSlideCard"
 import ProductsDescBar from "./ProductsDescBar" 
@@ -20,10 +20,10 @@ export default function ProductsCateg(){
         )
     })
     return(
-    <div className="products--categ p-2 d-flex">
+    <div className="products--categ  m-5 p-2 d-flex">
         <ProductsDescBar/>
         <div className="products--categ--context">
-        <h1 className='category--context text-left text-light'>Reach your goals with our products</h1>
+        <h1 className='category--context text-left text-light d-flex'>Reach your goals with our products <img src={muscleicon} className="m-5 d-flex icon"width="100"/></h1>
         <p className="w-100 pt-5 text-light">Satisfied more than thousand professional athletes and body-builders and 
             we are happy to share our products to increase more satisfied athletes and professional builders.
             Client satisfaction is our priority.</p>

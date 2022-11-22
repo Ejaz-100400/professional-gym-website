@@ -544,6 +544,7 @@ align-items: center;
   border-radius:3%;
   padding:10px;
   position: relative;
+  min-height:70vh;
 }
 .products--categ p{
   padding-top:20px;
@@ -833,14 +834,25 @@ input[type="radio"]{
 overflow-x: hidden;
 overflow-y: scroll;
 } */
-
+.icon{
+  justify-content: center;
+  align-items: center;
+}
 .pricing-section{
   margin-top:200px;
-  place-items: center;
-  align-items: center;
+  min-height:120vh;
+}
+.pricing-section--img{
   background: url('./assets/backmuscles.png');
   background-repeat: no-repeat;
   background-size: cover;
+  place-items: center;
+  align-items: center;
+  border-radius:20px;
+  transition: all 0.2s ease-in-out;
+}
+.pricing-section--img:hover{
+  visibility: visible;
 }
 .pricing-section>span{
   font-size:20px;
@@ -932,7 +944,7 @@ input:checked + .slider:before {
   flex-wrap: wrap;
 }
 .pricing--card--item{
-  width:400px;
+  width:300px;
   transition:all 0.1s ease-in;
   z-index:-1;
   border-radius: 20px;
@@ -979,7 +991,7 @@ font-size:60px;
   font-weight: 900;
   border: 2px solid rgb(255, 255, 255);
 }
-.plan-list{
-  font-weight:100;
+.plan-list li{
+  font-weight:600;
   font-size:19px;
 }
