@@ -19,11 +19,17 @@ export default function Gymcategories(){
             document.querySelector('.Header').style.backgroundColor="transparent"
             document.querySelector('.Header').style.backdropFilter="none"
         }
-        if(document.documentElement.scrollTop>2100){
+        if(document.documentElement.scrollTop>1650){
             document.querySelector('.products--categ').classList.add('bg-primary')
         }
         else{
         document.querySelector('.products--categ').classList.remove('bg-primary')
+        }
+        if(document.documentElement.scrollTop>1300){
+            document.querySelector('.exercise--categ').classList.add('bg-primary')
+        }
+        else{
+            document.querySelector('.exercise--categ').classList.remove('bg-primary')
         }
     }
 

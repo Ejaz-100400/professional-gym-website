@@ -6,7 +6,8 @@ import Gymcategories from './Components/Gymcategories/Gymcategories'
 import ExerciseCateg from './Components/Excersiecsategories/ExerciseCateg'
 import ProductsCateg from './Components/ProductsCategories/ProductsCateg'
 import NewReview from './Components/ProductsCategories/ProductsDescBarPanel/Reviews/NewReview'
-import PricingPlans from './Components/Pricing Plans/PricingPlans';
+import PricingPlans from './Components/Pricing Plans/PricingPlans'
+import Footer from './Components/Footer/Footer'
 // const newReview = function disp(){
 //   if(document.querySelector('.products--newreview--panel').style.display=='none'){
 //     document.querySelector('.products-newreview').style.display=='none'
@@ -27,6 +28,7 @@ function App() {
       <ProductsCateg/>
       <NewReview/>
       <PricingPlans />
+      <Footer />
       </div>
     </div>
   )

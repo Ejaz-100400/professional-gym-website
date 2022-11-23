@@ -33,7 +33,7 @@ export default function ProductsCateg(){
             </div>
         </div>
         <div className='products--categ--slider p-1 d-flex '>
-        <h5 className="text-light text-center position-absolute p-3">DOUBLE CLICK</h5>
+        <h5 className="text-light text-center position-absolute p-3">DOUBLE CLICK TO VIEW DESCRTIPTION</h5>
         <Swiper 
                 modules={[Pagination,EffectCoverflow,Navigation]}
                 style={{
