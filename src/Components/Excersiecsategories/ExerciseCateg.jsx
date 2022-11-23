@@ -21,7 +21,7 @@ export default function ExerciseCateg(){
     return(
     <div className="exercise--categ m-5 p-2 d-flex">
         <div className="products--categ--context">
-        <h1 className='category--context text-left text-light d-flex'>Reach your goals with our products <img src={muscleicon} className="m-5 d-flex icon"width="150"/></h1>
+        <h1 className='category--context text-left text-light d-flex'>The best moves to build your body muscles <img src={muscleicon} className="m-5 d-flex icon"width="150"/></h1>
         <p className="w-100 pt-5 text-light">Satisfied more than thousand professional athletes and body-builders and 
             we are happy to share our products to increase more satisfied athletes and professional builders.
             Client satisfaction is our priority.</p>
