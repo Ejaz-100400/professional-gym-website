@@ -33,16 +33,25 @@ html {
 }
 .black-bg-2{
   /* background:linear-gradient(to top right,#000000,rgb(8, 8, 8),rgb(0, 0, 0)); */
-  background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D);
+  /* background:linear-gradient(to top right,#9E0D36,#9E0D36,#26000D); */
   /* background-color: #0e070f;*/
   transition:all .2s ease-in-out;
   color:white;
+background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
+
+
 .black-bg-3{
   background-color: #abf213; 
   transition:all .2s linear;
 }
-
 /* .black-bg{
   position:absolute;
   background-color: #2F2D2D;
@@ -70,6 +79,10 @@ html {
   background-repeat: repeat-x;
   transition:all .2s linear;
   min-height:100vh;
+}
+.main>img{
+  left:0;
+  top:120px;
 }
 @media(max-width:976px){
   .main{
@@ -212,93 +225,28 @@ align-items: center;
     opacity:1
   }
 }
-.circle--1{
-  position:absolute;
-  top:25%;
-  right:9%;
-  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
-  padding:200px 200px;
-  border-radius:50%;
-  border:20px solid rgb(190, 64, 64);
-  z-index:1;
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d7e600, 0 0 40px #abf213, 0 0 50px #DEFF56, 0 0 60px #000000, 0 0 70px #272525;
 }
-
-.circle--2{
-  position:absolute;
-  top:13%;
-  right:8%;
-  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
-  padding:280px 280px;
-  border-radius:50%;
-  border:20px solid rgb(196, 33, 33);
-  z-index:1;
-}
-.circle--3{
-  position:absolute;
-  top:30%;
-  right:8%;
-  clip-path: polygon(53% 0, 54% 100%, 0% 100%, 0% 0%);
-  padding:150px 150px;
-  border-radius:50%;
-  border:20px solid rgb(196, 33, 33);
-  z-index:-1;
-}
-@media(max-width:976px){
-  .circle--1,.circle--2{
-    /* display: none; */
-  }
-  .circle--1{
-    padding:130px 130px;
-    clip-path:none;
-    top:680px;
-    right:200px;
-  }
-  .circle--2{
-    padding:230px 230px;
-    top:590px;
-    right:100px;
-    clip-path: polygon(93% 0, 94% 100%, 0% 100%, 0% 0%);
-  }
-  .circle--3{
-    display: none;
+@media(max-width:567px){
+  .glow{
+    font-size:30px;
+    transition:0.2s ease-in-out;
   }
 }
-.circle--1,.circle--2{
-  animation:revealcircle .2s linear;
-  transition: all 0.1s ease-in;
-}
-
-@media(max-width:576px){
-  .circle--1,.circle--2{
-    /* display: none; */
+/* @-webkit-keyframes glow {
+  from {
+    
   }
-  .circle--1{
-    padding:100px 100px;
-    clip-path:none;
-    top:650px;
-    right:50px;
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-  .circle--2{
-    padding:160px 160px;
-    top:600px;
-    right:0px;
-    clip-path: polygon(93% 0, 94% 100%, 0% 100%, 0% 0%);
-  }
-  .circle--3{
-    display: none;
-  }
-}
-.circle--1,.circle--2{
-  animation:revealcircle .2s linear;
-  transition: all 0.1s ease-in;
-}
-
-@keyframes revealcircle {
-  from{
-    transform:translateX(20%)
-  }
-}
-
+} */
 
 
 
@@ -392,10 +340,27 @@ align-items: center;
   bottom:100px;
 }
 
+h1{
+  justify-content: center;
+  font-size:20px;
+}
+h1 img{
+  width:25%;
 
+}
+@media(max-width:567px){
+  h1{
+    flex-wrap: wrap;
+  }
+  h1 img{
+    width:100%;
+  
+  }
+}
 
-
-
+.exercise--categ,.products--categ,.pricing-section--img{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgb(255, 255, 255) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 55px;
+}
 
 .exercise--categ{
   place-items: center;
@@ -425,7 +390,7 @@ align-items: center;
   padding-top:100px;
 }
 .slide--card:nth-child(2n+1){
-  background: url("./assets/Mike-OHearn-Dumbbell-Flye.jpg");
+  background: url("../src/assets/Mike-OHearn-Dumbbell-Flye.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
@@ -951,18 +916,16 @@ input:checked + .slider:before {
   transition:all 0.1s ease-in;
   z-index:-1;
   border-radius: 20px;
-  
+}
+@media(max-width:567px){
+  .pricing--card--item{
+    width:100%;
+  }
 }
 .pricing--card--item:hover{
 transform: scale(1.03);
 background-color:#2196F3;
 z-index:4;
-
-}
-@media(max-width:576px){
-  .pricing--card--item{
-    width:300px;
-  }
 
 }
 .pricinng{

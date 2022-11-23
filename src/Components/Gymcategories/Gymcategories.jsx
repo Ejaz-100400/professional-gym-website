@@ -44,11 +44,12 @@ export default function Gymcategories(){
       })
     return(
         <div className="gym--category p-5">
-            <h1 className='category--context text-center p-4'>For those of you who want to be<br></br> appear confident</h1>
+            <h1 className='category--context text-center p-5'>For those of you who want to be<br></br> appear confident</h1>
             <div className="card--items d-flex">
                 {carddata}
             </div>
-            <p className='text-center p-3'>"Everyone starts from a different starting line, what do you want to start with🔥"</p>
+            <p className="text-center pt-2">In here we will help you to shape and build
+                    your ideal body and we'll live up your life to the fullest</p>
         </div>
     )
 }
