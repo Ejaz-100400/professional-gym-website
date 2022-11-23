@@ -227,6 +227,7 @@ align-items: center;
 }
 .glow {
   font-size: 30px;
+  /* color: #fff; */
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
