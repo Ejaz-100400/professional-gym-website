@@ -230,7 +230,7 @@ align-items: center;
   color: #fff;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d7e600, 0 0 40px #abf213, 0 0 50px #DEFF56, 0 0 60px #000000, 0 0 70px #272525;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d7e600, 0 0 40px #abf213, 0 0 50px;
 }
 @media(max-width:567px){
   .glow{
