@@ -7,13 +7,16 @@ import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
 import 'swiper/css'
 export default function ProductsDescBar(){
-    const [close,setclose]=React.useState(false)
-    function closebtn(){
-        setclose(prevState=>!prevState)
-    } 
+    // const [close,setclose]=React.useState(false)
+    // function closebtn(){
+    //     setclose(prevState=>!prevState)
+    // } 
     // const disp=function(){
     //     close==true?'none':'block'
     // }
+    function closebtn(){
+        document.querySelector('.prod-desc-disp').style.display="none";
+    }
     const productsdescdata = ProductDesc.map((productsdescdat)=>{
         return(
         <SwiperSlide>

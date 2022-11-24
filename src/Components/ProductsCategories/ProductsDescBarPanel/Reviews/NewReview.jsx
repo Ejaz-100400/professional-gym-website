@@ -3,7 +3,6 @@ export default function NewReview(){
     // star rating states
     const[rating,setrating]=React.useState(null)
     const[hoverrating,sethoverrating]=React.useState(null)
-    const [closeform,setcloseform]=React.useState(false)
     // formdata states
     const[formData,setformData]=React.useState(
         {
@@ -23,7 +22,7 @@ export default function NewReview(){
 
     }
     return(
-        <div className="products-newreview ml-3 mr-3" style={{display:closeform?'block':'none',color:'white'}}>
+        <div className="products-newreview ml-3 mr-3">
         <div className="products--newreview--panel" id='newreview'>
                 <i onClick={closebtnform} class="fa-solid fa-xmark position-absolute fa-2x text-danger"></i>
                 <h4 className="text-center">WRITE REVIEW, PUBLISH</h4>
@@ -63,6 +62,6 @@ export default function NewReview(){
         </div>
     )
     function closebtnform(){
-        setcloseform(prevState=>!prevState)
+        document.querySelector('.products-newreview').style.display = 'none';
     } 
 }

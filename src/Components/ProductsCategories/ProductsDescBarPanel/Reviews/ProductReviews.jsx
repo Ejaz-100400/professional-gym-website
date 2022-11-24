@@ -62,21 +62,22 @@ export default function ProductReviews(props){
                 <span className="text-light pb-3">6 responses</span>
             </div>
         </div>
-        <button onClick={revi} id='rever' className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
+        <button onClick={openreview} id='rever' className="btn btn-primary review-btn text-uppercase text-light mt-3 d-flex" >WRITE A REVIEW</button>
     </div>
     <div className="review">
         {reviewdata}
     </div>
     </div>
     )
-    function revi(){
-    const but=document.querySelectorAll('#rever')
-    but.forEach((revbtn)=>{
-        revbtn.addEventListener('click',function(){
-            // document.querySelector('.products-newreview').style.display="block";
-            $('.products-newreview').slideDown(200);
-        })
-    }) 
+    function openreview(){
+    document.querySelector('.products-newreview').style.display="block";
+    // const but=document.querySelectorAll('#rever')
+    // but.forEach((revbtn)=>{
+    //     revbtn.addEventListener('click',function(){
+    //         // document.querySelector('.products-newreview').style.display="block";
+    //         $('.products-newreview').slideDown(200);
+    //     })
+    // }) 
         
         
        
