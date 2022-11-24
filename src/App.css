@@ -254,6 +254,10 @@ align-items: center;
 
 
 
+.card--items{
+  top:-90px;
+}
+
 .gym--category>h1{
   font-size:45px;
 } 
