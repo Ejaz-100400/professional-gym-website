@@ -95,8 +95,6 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   .main--toggle{
     font-size:15px;
   }
-  .main--context{
-  }
 }
 .main--content{
   flex-direction: column;
@@ -109,8 +107,6 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   align-items:center;
   flex-wrap: wrap;
   height:10%;
-}
-.mavbar--main{
 }
 .nav--menu{
   position:relative;
