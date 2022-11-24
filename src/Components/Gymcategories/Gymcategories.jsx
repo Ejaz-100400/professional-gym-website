@@ -1,7 +1,6 @@
 import  Cards from './Cards'
 import Carddetails from '../Datas/Carddetails'
 export default function Gymcategories(){
-
     window.onscroll=function(){
         if(document.documentElement.scrollTop>600){
             document.querySelector('.scroll-anim').classList.remove('bg-main-scroll')
