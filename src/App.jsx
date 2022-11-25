@@ -8,18 +8,18 @@ import ProductsCateg from './Components/ProductsCategories/ProductsCateg'
 import NewReview from './Components/ProductsCategories/ProductsDescBarPanel/Reviews/NewReview'
 import PricingPlans from './Components/Pricing Plans/PricingPlans'
 import Footer from './Components/Footer/Footer'
-// const newReview = function disp(){
-//   if(document.querySelector('.products--newreview--panel').style.display=='none'){
-//     document.querySelector('.products-newreview').style.display=='none'
-//   }
-//   else{
-//     document.querySelector('.products-newreview').style.display=='block'
-//   }
-// }
 function App() {
-
+  function moveanim(){
+  var cursor=document.querySelector('.cursor');
+  document.onmousemove =function(e) {
+    cursor.style.left=(e.pageX-25)+'px';
+    cursor.style.top=(e.pageY-25)+'px';
+    cursor.style.display='block';
+  }
+  }
   return (
-    <div className="App black-bg-1">
+    <div className="App black-bg-1 position-relative" onmousemove={moveanim}>
+       <div className="cursor"></div>
       <Header/>
       <Main />
       <div className='bg-main-scroll scroll-anim'>
