@@ -403,7 +403,7 @@ h1 img{
   padding-top:100px;
 }
 .slide--card:nth-child(2n+1){
-  background: url("./assets/Mike-OHearn-Dumbbell-Flye.jpg");
+  background: url("/assets/Mike-OHearn-Dumbbell-Flye.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
@@ -537,7 +537,7 @@ h1 img{
 }
 .products--categ--slider{
   position: relative;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.342)),url("./assets/bodybuilding-bench-standing-training-exercise-wallpaper-preview.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.416),rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.342)),url("/assets/bodybuilding-bench-standing-training-exercise-wallpaper-preview.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
