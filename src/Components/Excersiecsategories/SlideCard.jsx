@@ -1,3 +1,4 @@
+
 export default function SlideCard(props){
     return(
         <div className='slide--card'>

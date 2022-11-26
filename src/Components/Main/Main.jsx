@@ -1,4 +1,4 @@
-import gympic from '../../assets/blob.svg'
+
 export default function Main(){
     return(
         <div className="main  p-2 d-flex text-light text-center position-relative">

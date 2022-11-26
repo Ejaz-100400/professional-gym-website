@@ -2,7 +2,7 @@ export default[
     {
         id:1,
         No_of_Reviews:21,
-        card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
+        card_img_src:'assets/wp5643116.jpg',
         ProductName:'Muscular Gain Protein',
         kg:'30KG',
         Price:'₹1,999',
@@ -20,7 +20,7 @@ export default[
     },
     {
         id:2,
-        card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
+        card_img_src:'/assets/wp5643116.jpg',
         No_of_Reviews:21,
         ProductName:'Muscular Whey Protein',
         kg:'35KG',
@@ -40,7 +40,7 @@ export default[
     },
     {
         id:3,
-        card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
+        card_img_src:'/assets/wp5643116.jpg',
         No_of_Reviews:21,
         ProductName:'Muscular Loss Weight',
         kg:'25KG',
@@ -59,7 +59,7 @@ export default[
     },
     {
         id:4,
-        card_img_src:'https://wallpapercave.com/wp/wp5643116.jpg',
+        card_img_src:'/assets/wp5643116.jpg',
         No_of_Reviews:21,
         ProductName:'Muscular For Kids',
         Price:'₹1,399',

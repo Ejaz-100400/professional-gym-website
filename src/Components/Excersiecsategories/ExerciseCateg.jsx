@@ -1,4 +1,5 @@
-import muscleicon from '../../assets/deadlift-unscreen.gif'
+// import muscleicon from '../../assets/deadlift-unscreen.gif'
+import muscleicon from '../../../public/assets/deadlift-unscreen.gif';
 import SlideCard from './SlideCard'
 import SlideCardData from '../Datas/SlideCardData'
 import {Swiper,SwiperSlide} from 'swiper/react'

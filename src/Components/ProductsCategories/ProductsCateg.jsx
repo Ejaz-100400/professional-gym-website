@@ -1,4 +1,4 @@
-import muscleicon from '../../assets/muscle-unscreen.gif'
+import muscleicon from '../../../public/assets/muscle-unscreen.gif'
 import ProductsDesc from "../Datas/ProductDesc"
 import ProductsSlideCard from "./ProductsSlideCard"
 import ProductsDescBar from "./ProductsDescBar" 

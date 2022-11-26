@@ -6,17 +6,19 @@ export default function NewReview(){
     // formdata states
     const[formData,setformData]=React.useState(
         {
-            'reviewtitle':'',
-             'comments':'',
+            reviewtitle:'',
+             comments:'',
+             rating:'',
         }
     )
-    console.log(formData)
+
     function handleReview(event){
+        const [name,value,type,checked]=event.target
         setformData(prevforData=>{
         event.preventDefault()
           return{
             ...prevforData,
-            [event.target.name]:event.target.value
+            [name]:type === 'checkbox' ? checked : value
           }
         })
 
@@ -34,11 +36,13 @@ export default function NewReview(){
                         {[...Array(5)].map((star,i) =>{
                             const ratingval=i+1
                             return (
-                            <label>
+                            <label for='rating'>
                                 <input type='radio' 
                                        name='rating' 
+                                       checked={formData.rating}
                                        value={ratingval}
-                                       onClick={()=>setrating(ratingval)} />
+                                       onClick={()=>setrating(ratingval)}
+                                       onChange={handleReview} />
                                 <i className="fa-solid fa-star fa-1x"
                                     onMouseEnter={()=>sethoverrating(ratingval)}
                                     onMouseLeave={()=>sethoverrating( null )}

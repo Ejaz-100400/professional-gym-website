@@ -1,4 +1,4 @@
-import imglogo from "../../assets/power_CRP-removebg-preview.png"
+import imglogo from "../../../public/assets/power_CRP-removebg-preview.png"
 
 
 export  default function Header(){

@@ -85,7 +85,7 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   transition: all 0.3s ease-in-out;
 }
 .main{
-  background:linear-gradient(to top right,rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.377)),url('../src/assets/homebg3.png');
+  background:linear-gradient(to top right,rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.678),rgba(0, 0, 0, 0.377)),url('/assets/homebg3.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat-x;
@@ -403,7 +403,7 @@ h1 img{
   padding-top:100px;
 }
 .slide--card:nth-child(2n+1){
-  background: url("../src/assets/Mike-OHearn-Dumbbell-Flye.jpg");
+  background: url("./assets/Mike-OHearn-Dumbbell-Flye.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
