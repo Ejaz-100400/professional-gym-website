@@ -5,6 +5,9 @@ export  default function Header(){
     function handlemobbar(){
         setmobbar(prevstate=>!prevstate);
     }
+    function setcart(){
+       $('.cart-container').slideToggle(100)
+    }
     return(
         <div className="Header">
             <div className="d-flex navbar--main">
@@ -18,11 +21,15 @@ export  default function Header(){
                     <li>Our Products</li>
                     <li>Pricing</li>
                 </ul>
-                <button class='btn btn-join p-2 mb-2'>
+                <div className="p-2">
+                <button onClick={setcart} class='btn btn-cart  btn-join p-4 mb-2 w-100'style={{fontSize:'20px'}}>
                     <a>
-                        JOIN NOW
+                        Cart(
+                            <span className="cart-val">0</span>
+                        )
                     </a>
                 </button>
+                </div>
                 <div class='navbar--main--mobile p-2'>
                     <i onClick={handlemobbar} className="fa-solid fa-bars fa-2x text-light"></i>
                 </div>

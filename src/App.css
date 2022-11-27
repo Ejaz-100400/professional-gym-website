@@ -1166,8 +1166,6 @@ li.instagram:hover{
   font-size:20px;
   background-color: #abf213;
 } 
-.products--context{
-}
 .products--panel--description{
   height:200px;
 }
@@ -1183,4 +1181,43 @@ li.instagram:hover{
     height:800px;
     top:50%;
   }
+}
+
+.cart-val{
+  animation:scaling 0.4s ease-in;
+}
+@keyframes scaling{
+  from{
+    transform: scale(2.5);
+  }
+  to{
+    transform: scale(1);
+  }
+  
+}
+.cart-msg {
+display: flex;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+.cart-container{
+  z-index:15;
+  right:20px;
+  top:120px;
+  width:400px;
+  height:200px;
+  display:none;
+  background-color:#928383a6;
+  backdrop-filter: blur(10px);
+  animation:revealimg 0.2s ease-in-out;
+}
+.cart-item{
+  display: none;
+}
+.cart-list{
+  justify-content: space-around;
+  align-items:stretch;
+
 }

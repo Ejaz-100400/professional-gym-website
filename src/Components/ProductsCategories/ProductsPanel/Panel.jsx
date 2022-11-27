@@ -21,7 +21,7 @@ export default function Panel(){
     return(
         <div className="products--panel position-absolute w-100">
             <div className='position-relative'>
-            <i onClick={closepanel} class="fa-solid fa-xmark text-danger position-absolute fa-2x"></i>
+            <i onClick={closepanel} class="fa-solid fa-xmark text-danger position-absolute fa-3x"></i>
             </div>
             <div className="d-flex overflow-hidden w-100">
             <Swiper
