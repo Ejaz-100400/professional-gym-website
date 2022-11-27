@@ -1,7 +1,7 @@
 import muscleicon from '../../../public/assets/muscle-unscreen.gif'
 import ProductsDesc from "../Datas/ProductDesc"
-import ProductsSlideCard from "./ProductsSlideCard"
-import ProductsDescBar from "./ProductsDescBar" 
+import Panel from "./ProductsPanel/Panel"
+import ProductsSlideCard from "./ProductsSlideCard" 
 import {Swiper,SwiperSlide} from 'swiper/react'
 import{Navigation,EffectCoverflow,Pagination} from 'swiper'
 import 'swiper/css/navigation'
@@ -19,9 +19,10 @@ export default function ProductsCateg(){
         </div>
         )
     })
+    
     return(
-    <div className="products--categ  m-5 p-2 d-flex">
-        <ProductsDescBar/>
+    <div className="products--categ position-relative m-5 p-2 d-flex">
+        <Panel/>
         <div className="products--categ--context">
         <h1 className='category--context text-left text-light d-flex'>Reach your goals with our products <img src={muscleicon} className="m-5 d-flex icon"width="100"/></h1>
         <p className="w-100 pt-5 text-light">Satisfied more than thousand professional athletes and body-builders and 

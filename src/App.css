@@ -2,11 +2,9 @@
   margin:0;
   padding:0;
   font-family: 'Segoe UI';
+  box-sizing: border-box;
 }
-body{
-  cursor:grab;  
-}
-.cursor{
+/* .cursor{
   height:50px;
   width:50px;
   background-color: #00acee;
@@ -14,12 +12,12 @@ body{
   position: absolute;
   z-index:5;
   transition:all 0.1s ease-in-out;
-}
+} */
 /* h1{
   word-spacing:5px;
 } */
 ::-webkit-scrollbar{
-  width:6px;
+  width:0px;
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0);
@@ -125,10 +123,35 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   gap:50px;
   font-size:20px;
 }
-@media(max-width:768px){
+.navbar--main--mobile,.nav--menu--mobile{
+  display:none;
+}
+@media(max-width:1068px){
   .nav--menu>li{
     display:none;
   }
+  .navbar--main--mobile,.nav--menu--mobile{
+    display:block;
+  }
+  .nav--menu--mobile{
+    place-items: center;
+    text-align: center;
+    gap:20px;
+    transition:all 0.2s ease-in-out;
+    animation:revealimg 0.2s ease-in-out;
+    min-height:60vh;
+    background-color:#fffff2d2;
+    backdrop-filter:blur(2px);
+    
+  }
+  .nav--menu--mobile>li{
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+  }
+  .btn-join{
+    display: none;
+  } 
 }
 .Header .btn{
   background-color: #FF8B0C;
@@ -826,7 +849,7 @@ overflow-y: scroll;
   min-height:120vh;
 }
 .pricing-section--img{
-  background: url('./assets/backmuscles.png');
+  background: url('/assets/backmuscles.png');
   background-repeat: no-repeat;
   background-size: cover;
   place-items: center;
@@ -1105,4 +1128,59 @@ li.google:hover{
 }
 li.instagram:hover{
   background-color:rgb(234, 37, 155);
+}
+
+/* panel */
+.products--panel{
+  overflow-y:scroll;
+  z-index:5;
+  min-height:75vh;
+  background-color: #4267b29a;
+  backdrop-filter: blur(10px);
+  border-radius:20px;
+  height:200px;
+  animation:revealimg 0.2s ease-in-out;
+  display: none;
+}
+.products--main--section{
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap:160px;
+  
+}
+.prod--context--actions{
+  flex-wrap:wrap;
+  align-items: center;
+  gap:40px;
+}
+.cost{
+  font-size:45px;
+  color:black;
+  font-weight:bold;
+}
+.prod-title{
+  font-size:51px;
+}
+.cart{
+  font-size:20px;
+  background-color: #abf213;
+} 
+.products--context{
+}
+.products--panel--description{
+  height:200px;
+}
+.products--panel--description{
+  place-items: center;
+}
+
+@media(max-width:567px){
+  .products--panel--description{
+    place-items:center;
+  }
+  .products--panel{
+    height:800px;
+    top:50%;
+  }
 }

@@ -19,7 +19,7 @@ export default function ProductsSlideCard(props){
         </div>    
     )
     function openpanel(){
-        document.querySelector('.prod-desc-disp').style.display = 'block';
+        document.querySelector('.products--panel').style.display = 'block';
     }
     // function dis(){
     //     setdisplay(prestate=>{

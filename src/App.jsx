@@ -5,7 +5,6 @@ import Main from './Components/Main/Main'
 import Gymcategories from './Components/Gymcategories/Gymcategories'
 import ExerciseCateg from './Components/Excersiecsategories/ExerciseCateg'
 import ProductsCateg from './Components/ProductsCategories/ProductsCateg'
-import NewReview from './Components/ProductsCategories/ProductsDescBarPanel/Reviews/NewReview'
 import PricingPlans from './Components/Pricing Plans/PricingPlans'
 import Footer from './Components/Footer/Footer'
 function App() {
@@ -26,7 +25,6 @@ function App() {
       <Gymcategories />
       <ExerciseCateg />
       <ProductsCateg/>
-      <NewReview/>
       <PricingPlans />
       <Footer />
       </div>
