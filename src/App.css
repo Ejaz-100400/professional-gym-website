@@ -1203,12 +1203,13 @@ left:50%;
 transform: translate(-50%, -50%);
 }
 .cart-container{
+  padding:20px 50px;
   z-index:15;
   right:20px;
   top:120px;
   width:500px;
   display:none;
-  background-color:#928383a6;
+  background-color:#ffffffa6;
   backdrop-filter: blur(10px);
   animation:revealimg 0.2s ease-in-out;
 }
@@ -1227,6 +1228,9 @@ transform: translate(-50%, -50%);
   align-items: center;
   color:#baf213;
   font-weight: 900;
+}
+.set-quantity,.set-result{
+  display: none;
 }
 .quantity{
  gap:16px;
@@ -1252,4 +1256,7 @@ transform: translate(-50%, -50%);
 .buy-sec {
 justify-content: space-around;
 align-items: center;
+}
+.total{
+  font-size:25px;
 }

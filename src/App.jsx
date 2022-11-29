@@ -10,8 +10,6 @@ import Footer from './Components/Footer/Footer'
 import Cart from './Components/ProductsCategories/ProductsPanel/Cart/Cart';
 function App() {
   //cartitemstate
-  const[cartItems,setcartItems] =React.useState([])
-  const[cartItemsactive,setcartItemsactive] =React.useState(false)
   function moveanim(){
   var cursor=document.querySelector('.cursor');
   document.onmousemove =function(e) {
@@ -20,17 +18,18 @@ function App() {
     cursor.style.display='block';
   }
   }
+
   return (
     <div className="App black-bg-1 position-relative" onmousemove={moveanim}>
        <div className="cursor"></div>
       <Header/>
       <div className="position-relative">
-      <Cart cartItems={cartItems} cartItemsactive={cartItemsactive}/>
+      <Cart/>
       <Main />
       <div className='bg-main-scroll scroll-anim'>
       <Gymcategories />
       <ExerciseCateg />
-      <ProductsCateg cartItems={cartItems} cartItemsactive={cartItemsactive}/>
+      <ProductsCateg/>
       <PricingPlans />
       <Footer />
       </div>
